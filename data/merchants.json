@@ -1,7 +1,10 @@
 {
-"employees": [
-{ "firstName":"John" , "lastName":"Doe" }, 
-{ "firstName":"Anna" , "lastName":"Smith" }, 
-{ "firstName":"Peter" , "lastName":"Jones" }
+"Websites": [
+{ "url":"flipkart" }, 
+{ "url":"myntra" }, 
+{ "url":"jabong" },
+{ "url":"yatra" },
+{ "url":"provogue" },
+{ "url":"lenskart" }
 ]
 }
