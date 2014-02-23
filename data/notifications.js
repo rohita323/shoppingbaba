@@ -8,6 +8,6 @@ self.port.on("reset", function() {
   alert.src = "empty.png";
 });
 self.port.on("BINGO", function(message) {             //BINGO sent when match found
-	alert.src = "alert.gif";
+	alert.src = "alerty.gif";
 	//self.port.emit("change_content",message);
 });
