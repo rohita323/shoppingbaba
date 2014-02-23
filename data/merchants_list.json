@@ -251,17 +251,17 @@
         "merchant_details": "8% Cashback"
     }, 
     {
-        "merchant_name": "Yatra Hotels", 
+        "merchant_name": "yatra|Hotels", 
         "url_name": "yatraHotels", 
         "merchant_details": "Rs 850 Cashback on Hotels"
     }, 
     {
-        "merchant_name": "Yatra Domestic Flights", 
+        "merchant_name": "yatra|Domestic Flights", 
         "url_name": "Yatra_Domestic_Flights", 
         "merchant_details": "Rs 191 On domestic flights"
     }, 
     {
-        "merchant_name": "yatra international flights", 
+        "merchant_name": "yatra|international flights", 
         "url_name": "yatra_international_flights", 
         "merchant_details": "Rs 382 on international flights"
     }, 

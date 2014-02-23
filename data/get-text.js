@@ -23,4 +23,5 @@ self.port.on("change_content", function(message) {
 
 self.port.on("reset", function() {
 	textArea.innerHTML = "Sorry, No coupons found.";
+  $("#content").off("click");
 });
