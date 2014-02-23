@@ -1,0 +1,374 @@
+{
+    "Websites": [
+    {
+        "merchant_name": "Myntra", 
+        "url_name": "myntra", 
+        "merchant_details": "Flat Rs.200 Cashback"
+    }, 
+    {
+        "merchant_name": "Jabong", 
+        "url_name": "jabong", 
+        "merchant_details": "Flat 7% Cashback"
+    }, 
+    {
+        "merchant_name": "Fashionara", 
+        "url_name": "fashionara", 
+        "merchant_details": "Upto Rs 170 Cashback"
+    }, 
+    {
+        "merchant_name": "Babyoye", 
+        "url_name": "babyoye", 
+        "merchant_details": "Upto Rs 230 Cashback"
+    }, 
+    {
+        "merchant_name": "Adlabs imagica", 
+        "url_name": "adlabs_imagica", 
+        "merchant_details": "Rs 170 per sale"
+    }, 
+    {
+        "merchant_name": "Basics life", 
+        "url_name": "basics", 
+        "merchant_details": "Upto Rs 350 Cashback"
+    }, 
+    {
+        "merchant_name": "Daily Objects", 
+        "url_name": "Daily_Objects", 
+        "merchant_details": "Rs 120 per sale"
+    }, 
+    {
+        "merchant_name": "Expedia Hotels", 
+        "url_name": "Expedia_Hotels", 
+        "merchant_details": "6% per sale on hotels"
+    }, 
+    {
+        "merchant_name": "Expedia Buses", 
+        "url_name": "expedia", 
+        "merchant_details": "Rs 30 per sale on buses"
+    }, 
+    {
+        "merchant_name": "Expedia Flights", 
+        "url_name": "Expedia_Flights", 
+        "merchant_details": "0.5% per sale on flights"
+    }, 
+    {
+        "merchant_name": "Fab furnish", 
+        "url_name": "fabfurnish", 
+        "merchant_details": "6% per sale"
+    }, 
+    {
+        "merchant_name": "frens and petals", 
+        "url_name": "frensandpetals", 
+        "merchant_details": "12% per sale"
+    }, 
+    {
+        "merchant_name": "fetise", 
+        "url_name": "fetise", 
+        "merchant_details": "8% per sale"
+    }, 
+    {
+        "merchant_name": "floweraura", 
+        "url_name": "floweraura", 
+        "merchant_details": "12% per sale"
+    }, 
+    {
+        "merchant_name": "Foodpanda", 
+        "url_name": "foodpanda", 
+        "merchant_details": "Upto Rs 160 Cashback"
+    }, 
+    {
+        "merchant_name": "futurebazaar", 
+        "url_name": "futurebazaar", 
+        "merchant_details": "Upto Rs 90 Cashback"
+    }, 
+    {
+        "merchant_name": "gaadi", 
+        "url_name": "gaadi", 
+        "merchant_details": "12% per sale"
+    }, 
+    {
+        "merchant_name": "Globus", 
+        "url_name": "globus", 
+        "merchant_details": ""
+    }, 
+    {
+        "merchant_name": "go air", 
+        "url_name": "goair", 
+        "merchant_details": ""
+    }, 
+    {
+        "merchant_name": "gobol", 
+        "url_name": "gobol", 
+        "merchant_details": "1% per sale"
+    }, 
+    {
+        "merchant_name": "godaam", 
+        "url_name": "godaam", 
+        "merchant_details": "Rs 140 per sale"
+    }, 
+    {
+        "merchant_name": "greendust", 
+        "url_name": "greendust", 
+        "merchant_details": "Upto Rs 1000 Cashback"
+    }, 
+    {
+        "merchant_name": "greetzap voicecards", 
+        "url_name": "greetzap", 
+        "merchant_details": "10% per sale on voice cards"
+    }, 
+    {
+        "merchant_name": "greetzap flowers and gifts", 
+        "url_name": "greetzap_flowers", 
+        "merchant_details": "10% per sale on flowers & gifts"
+    }, 
+    {
+        "merchant_name": "Homeshop18", 
+        "url_name": "homeshop18", 
+        "merchant_details": "Upto 8% Cashback"
+    }, 
+    {
+        "merchant_name": "Hotels.com", 
+        "url_name": "hotels", 
+        "merchant_details": "6% per sale Cashback"
+    }, 
+    {
+        "merchant_name": "indiacircus", 
+        "url_name": "indiacircus", 
+        "merchant_details": "Rs 170 per sale cashback"
+    }, 
+    {
+        "merchant_name": "indiarush", 
+        "url_name": "indiarush", 
+        "merchant_details": "Rs 100 per sale cashback"
+    }, 
+    {
+        "merchant_name": "indiatimesshopping", 
+        "url_name": "indiatimesshopping", 
+        "merchant_details": "4% flat"
+    }, 
+    {
+        "merchant_name": "Inkfruit", 
+        "url_name": "inkfruit", 
+        "merchant_details": "Rs 127 Cashback"
+    }, 
+    {
+        "merchant_name": "Justeat", 
+        "url_name": "justeat", 
+        "merchant_details": "Rs 153 Cashback "
+    }, 
+    {
+        "merchant_name": "Lenskart", 
+        "url_name": "lenskart", 
+        "merchant_details": "Rs 90 Cashback"
+    }, 
+    {
+        "merchant_name": "watchkart", 
+        "url_name": "watchkart", 
+        "merchant_details": "Rs 90 Cashback"
+    }, 
+    {
+        "merchant_name": "bagskart", 
+        "url_name": "bagskart", 
+        "merchant_details": "Rs 90 Cashback"
+    }, 
+    {
+        "merchant_name": "Jewels kart", 
+        "url_name": "jewelskart", 
+        "merchant_details": "Rs 90 Cashback"
+    }, 
+    {
+        "merchant_name": "limeroad", 
+        "url_name": "limeroad", 
+        "merchant_details": "Rs 240 Cashback"
+    }, 
+    {
+        "merchant_name": "masticart", 
+        "url_name": "masticart", 
+        "merchant_details": "Rs 170 Cashback"
+    }, 
+    {
+        "merchant_name": "moodsofcloe", 
+        "url_name": "moodsofcloe", 
+        "merchant_details": "Rs 200 Cashback"
+    }, 
+    {
+        "merchant_name": "naaptol", 
+        "url_name": "naaptol", 
+        "merchant_details": "Rs 212 Cashback"
+    }, 
+    {
+        "merchant_name": "Shop at disney", 
+        "url_name": "shopatdisney", 
+        "merchant_details": " 6.80% Cashback"
+    }, 
+    {
+        "merchant_name": "freedomtree", 
+        "url_name": "freedomtree", 
+        "merchant_details": "4% Cashback"
+    }, 
+    {
+        "merchant_name": "Tata McGraw Hills", 
+        "url_name": "Tata_McGraw_Hills", 
+        "merchant_details": "6.80%  Cashback"
+    }, 
+    {
+        "merchant_name": "pepperfry", 
+        "url_name": "pepperfry", 
+        "merchant_details": "Upto Rs 6.40% Cashback"
+    }, 
+    {
+        "merchant_name": "policy advisor", 
+        "url_name": "policy_advisor", 
+        "merchant_details": "Rs  48 Cashback per lead"
+    }, 
+    {
+        "merchant_name": "Printland.in", 
+        "url_name": "printland", 
+        "merchant_details": "12% Cashback"
+    }, 
+    {
+        "merchant_name": "printvenue", 
+        "url_name": "printvenue", 
+        "merchant_details": "Rs 85 Cashback"
+    }, 
+    {
+        "merchant_name": "zovi", 
+        "url_name": "zovi", 
+        "merchant_details": " Rs 195 Cashback"
+    }, 
+    {
+        "merchant_name": "zivame", 
+        "url_name": "zivame", 
+        "merchant_details": "Rs 340 Cashback"
+    }, 
+    {
+        "merchant_name": "yepme", 
+        "url_name": "yepme", 
+        "merchant_details": "9.6 % Cashback"
+    }, 
+    {
+        "merchant_name": "yebhi", 
+        "url_name": "yebhi", 
+        "merchant_details": "8% Cashback"
+    }, 
+    {
+        "merchant_name": "Yatra Hotels", 
+        "url_name": "yatraHotels", 
+        "merchant_details": "Rs 850 Cashback on Hotels"
+    }, 
+    {
+        "merchant_name": "Yatra Domestic Flights", 
+        "url_name": "Yatra_Domestic_Flights", 
+        "merchant_details": "Rs 191 On domestic flights"
+    }, 
+    {
+        "merchant_name": "yatra international flights", 
+        "url_name": "yatra_international_flights", 
+        "merchant_details": "Rs 382 on international flights"
+    }, 
+    {
+        "merchant_name": "vistaprint", 
+        "url_name": "vistaprint", 
+        "merchant_details": "Rs 200 Cashback"
+    }, 
+    {
+        "merchant_name": "trendIN", 
+        "url_name": "trendIN", 
+        "merchant_details": "Rs 224 Cashback "
+    }, 
+    {
+        "merchant_name": "Travelguru", 
+        "url_name": "travelguru", 
+        "merchant_details": "Rs 510 Cashback"
+    }, 
+    {
+        "merchant_name": "suratdiamond", 
+        "url_name": "suratdiamond", 
+        "merchant_details": "8.5% Cashback "
+    }, 
+    {
+        "merchant_name": "starCJ", 
+        "url_name": "starCJ", 
+        "merchant_details": "Rs 40 Cashback"
+    }, 
+    {
+        "merchant_name": "snapdeal", 
+        "url_name": "snapdeal", 
+        "merchant_details": "Upto Rs 330 Cashback"
+    }, 
+    {
+        "merchant_name": "shopclues", 
+        "url_name": "shopclues", 
+        "merchant_details": "3.60% Cashback"
+    }, 
+    {
+        "merchant_name": "shopclues electronics", 
+        "url_name": "shopclues_electronics", 
+        "merchant_details": "1.7% Cashback on Electronics"
+    }, 
+    {
+        "merchant_name": "rediff shopping", 
+        "url_name": "rediff_shopping", 
+        "merchant_details": "Rs 43 Cashback"
+    }, 
+    {
+        "merchant_name": "provogue", 
+        "url_name": "provogue", 
+        "merchant_details": "5.95 % Cashback"
+    }, 
+    {
+        "merchant_name": "Flipkart", 
+        "url_name": "flipkart", 
+        "merchant_details": "Upto 7% cashback"
+    }, 
+    {
+        "merchant_name": "Ebay", 
+        "url_name": "ebay", 
+        "merchant_details": "Upto Rs 102 Cashback"
+    }, 
+    {
+        "merchant_name": "Bestylish", 
+        "url_name": "bestylish", 
+        "merchant_details": "Rs 144 Cashback"
+    }, 
+    {
+        "merchant_name": "Red Bus", 
+        "url_name": "redbus", 
+        "merchant_details": "Rs 35 cashback"
+    }, 
+    {
+        "merchant_name": "Paytm", 
+        "url_name": "Paytm", 
+        "merchant_details": "Rs 3 cashback "
+    }, 
+    {
+        "merchant_name": "Dominos", 
+        "url_name": "dominos", 
+        "merchant_details": "Rs 12 Cashback"
+    }, 
+    {
+        "merchant_name": "Amazon", 
+        "url_name": "amazon", 
+        "merchant_details": "Upto 4% Cashback"
+    }, 
+    {
+        "merchant_name": "Tradus", 
+        "url_name": "tradus", 
+        "merchant_details": "Flat 2% Cashback"
+    }, 
+    {
+        "merchant_name": "Flaberry", 
+        "url_name": "flaberry", 
+        "merchant_details": "Flat 12% Cashback"
+    }, 
+    {
+        "merchant_name": "Funatic", 
+        "url_name": "funatic", 
+        "merchant_details": "Flat 6.40% Cashback"
+    }, 
+    {
+        "merchant_name": "Peprismine", 
+        "url_name": "peprismine", 
+        "merchant_details": "Flat Rs 112 Cashback"
+    }
+]
+}
