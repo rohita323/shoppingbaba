@@ -1,9 +1,10 @@
 {
-  "name": "version",
-  "title": "Version",
+  "name": "shopping_baba",
+  "title": "Shopping Baba",
   "id": "jid1-5zXGVd3vZAaE6Q",
-  "description": "a basic add-on",
+  "description": "Get Automatic alerts for cashback while shopping online",
   "author": "",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.1",
+  "icon" : "data/icon.png"
 }

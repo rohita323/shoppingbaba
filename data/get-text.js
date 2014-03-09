@@ -14,7 +14,7 @@ self.port.on("change_content", function(message) {
   var array = message.split(",");
   var url = "http://shoppingbaba.in/stores/" + array[0];
   var text = array[1];
-  textArea.innerHTML = "<a href=''>" + text + "</a>";
+  textArea.innerHTML = text;
   $("#content").off("click").bind("click", function() {
   	console.log("Clicked");
   	self.port.emit("gotourl", url);
@@ -25,3 +25,4 @@ self.port.on("reset", function() {
 	textArea.innerHTML = "Sorry, No coupons found.";
   $("#content").off("click");
 });
+
