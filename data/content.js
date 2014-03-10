@@ -4,10 +4,10 @@ var split = ['Myntra,myntra,Flat Rs.200 Cashback', 'Jabong,jabong,Flat 7% Cashba
 var panel;           //The popup on mouseover
 var content_css = "padding-top: 5%;padding-bottom: 5%;text-align: center;vertical-align: center;cursor: pointer;color: #000099;";
 var header_css = "border-bottom: 1px solid #e1ddd8; height:65px; background-color: #0066CC;";
-var main_css = "position:fixed; top:6.5%; border: 1px solid #e1ddd8;  z-index: 9999999; width:250px; height:155px; right:-250px"
+var main_css = "position:fixed; top:6.5%; border: 1px solid #e1ddd8;  z-index: 9999999; width:250px; height:155px; right:-250px";
 
 
-if (self.options.showOptions && self.options.ready<2) {
+if (true) {
 	  var url = "" + window.location.href;    //url of current tab
 	  var title = document.title;
 	  if (url!="" && !(url.indexOf("ads")!=-1 || url.indexOf("google")!=-1)) {
@@ -66,7 +66,7 @@ if (self.options.showOptions && self.options.ready<2) {
 						$( '#shoppingbaba_main' ).animate({right: "-250px"}, 500);
 						$('#shoppingbaba_tab').animate({right:"-=253.5px"}, 500);
 					});
-
+					self.port.emit("changed");
 
 				}, false);
 					
@@ -77,7 +77,3 @@ if (self.options.showOptions && self.options.ready<2) {
 }
 
 
-
-self.port.on("drawBorder", function(message) {
-	console.log("Color: " + message);
-});
