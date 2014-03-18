@@ -2,15 +2,16 @@ var split = ['Myntra,myntra,Flat Rs.200 Cashback', 'Jabong,jabong,Flat 7% Cashba
 
 var panel;           //The popup on mouseover
 var content_css = "font:17px arial,sans-serif; padding-top: 5%;padding-bottom: 5%;text-align: center;vertical-align: center;background-color: #ffffff; cursor: pointer;color: #000099;";
-var header_css = "border-bottom: 5px solid #e1ddd8; height:15px; background-color: #223355;";
-var main_css = "position:fixed; top:7%; background-color: #ffffff; border: 2px solid #555555;  z-index: 9999999; width:250px; height:145px; right:-250px";
+var content_css2 = "font:13px arial,sans-serif; padding-top: 1%;text-align: center;vertical-align: center;background-color: #ffffff; cursor: pointer;color: #000099;";
+var header_css = "border-bottom: 5px solid #e1ddd8; height:65px; background-color: #223355;";
+var main_css = "position:fixed; top:7%; background-color: #ffffff; border: 2px solid #555555;  z-index: 9999999; width:250px; height:155px; right:-250px";
 
 
 if (true) {
 	  var url = "" + window.location.href;    //url of current tab
 	  var title = document.title;
-	  if (url!="" && !(url.indexOf("ads")!=-1 || url.indexOf("google")!=-1)) {
-		  console.log("url: " + url + "\ntitle: " + title);
+	  if (url!="" && url.indexOf("ads")==-1) {
+		  //console.log("url: " + url + "\ntitle: " + title);
 		  var message = "Sorry. No coupons Found";      //message displayed in popup
 		  var flag = 0;                     // flag=1 when website matches list of options
 		  
@@ -36,8 +37,11 @@ if (true) {
 		      flag = 1;
 		      message = merchant_data[1] + "," + merchant_data[2];  //shopping baba store + "," + discount
 		      panel = '<div id="shoppingbaba_main" style="' + main_css +
-						'"><header style="'+ header_css + '"></header><div id="content" style="' + content_css
-						 + '">' + merchant_data[2] + '</div></div>';
+						'"><header style="'+ header_css + '">'
+						+'<img src = "' + self.options.image_url + '" style="margin-top:6px; margin-left:-20px;" />'
+						+'</header><div id="content" style="' + content_css
+						+ '">' + merchant_data[2] + '</div>'
+						+ '<div class="containertext2" style="' + content_css2 + '">Click to Redeem This Offer</div></div>';
 			  //console.log("Panel: " + panel);
 		      console.log("match found at Index:" + i);
 		    }
@@ -48,22 +52,29 @@ if (true) {
 				document.addEventListener('DOMContentLoaded', function() {
 					var elemDiv = document.createElement('div');
 					elemDiv.id = "shoppingbaba_tab"
-					elemDiv.style.cssText = 'position:fixed;'
-											+' background: url("http://shoppingbaba.in/assets/images/newimages/pop-up.png") '
-											+' no-repeat; height:145px; width:276px; padding-bottom:2px;'
-											+' padding-top:2px;top:7%; right:-250px; z-index: 99999999;';
+					elemDiv.style.cssText = 'position:fixed; cursor:pointer;'
+											+' background:url("' + self.options.tab_url + '")'
+											+' no-repeat; height:160px; width:278px; padding-bottom:2px;'
+											+' margin-top:5px; top:7%; right:-250px; z-index: 99999999;';
+					console.log("Tab: " + elemDiv.style.cssText.margin-top + "," + self.options.tab_url);
 					document.body.appendChild(elemDiv);	
 					$("body").append(panel);
-					$("#shoppingbaba_tab").on("mouseover", function(){
-						//console.log("Mouseover");
-						$( '#shoppingbaba_main' ).animate({right: "0px"}, 500);
-						$('#shoppingbaba_tab').animate({right:"+=250px"}, 500);
-					});
-					$("#shoppingbaba_tab").on("mouseout", function(){
-						//console.log("MouseOut");
-						$( '#shoppingbaba_main' ).animate({right: "-250px"}, 500);
-						$('#shoppingbaba_tab').animate({right:"-=250px"}, 500);
-					});
+					//Mouse over, popup Animation
+								$("#shoppingbaba_tab").on("mouseover", function(){
+									//console.log("Mouseover");
+									$( '#shoppingbaba_main' ).animate({right: "0px"}, 500);
+									$('#shoppingbaba_tab').animate({right:"+=252px"}, 500);
+								});
+								//Mouse out, popup Animation
+								$("#shoppingbaba_tab").on("mouseout", function(){
+									//console.log("MouseOut");
+									$( '#shoppingbaba_main' ).animate({right: "-250px"}, 500);
+									$('#shoppingbaba_tab').animate({right:"-=252px"}, 500);
+								});
+								//Click to go to store
+								$("#shoppingbaba_tab").on("click", function() {
+									window.open("http://www.shoppingbaba.in/stores/" + merchant_data[1], "_blank");
+								});
 					self.port.emit("changed");
 
 				}, false);
@@ -73,5 +84,4 @@ if (true) {
 		}
 	}
 }
-
 
