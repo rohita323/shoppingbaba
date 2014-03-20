@@ -49,13 +49,16 @@ if (true) {
 		  if (flag == 1) {
 		    	console.log("Match found: " + url);	
 				console.log("Ready: " + self.options.tab_url);
+				
 				document.addEventListener('DOMContentLoaded', function() {
+					
 					var elemDiv = document.createElement('div');
 					elemDiv.id = "shoppingbaba_tab"
 					elemDiv.style.cssText = 'position:fixed; cursor:pointer;'
 											+' background:url("' + self.options.tab_url + '")'
-											+' no-repeat; height:160px; width:278px; padding-bottom:2px;'
+											+' no-repeat; height:120px; width:auto; padding-bottom:2px;'
 											+' margin-top:5px; top:7%; right:-250px; z-index: 99999999;';
+					
 					console.log("Tab: " + elemDiv.style.cssText.margin-top + "," + self.options.tab_url);
 					document.body.appendChild(elemDiv);	
 					$("body").append(panel);
