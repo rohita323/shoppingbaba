@@ -38,7 +38,7 @@ if (true) {
 		      message = merchant_data[1] + "," + merchant_data[2];  //shopping baba store + "," + discount
 		      panel = '<div id="shoppingbaba_main" style="' + main_css +
 						'"><header style="'+ header_css + '">'
-						+'<img src = "' + self.options.image_url + '" style="position:relative; height:auto; width:100%; margin-top:5%; margin-bottom:5%" />'
+						+'<img src = "' + self.options.image_url + '" style="position:relative; height:auto; width:100%; margin-top:3%; margin-bottom:3%" />'
 						+'</header><div id="content" style="' + content_css
 						+ '">' + merchant_data[2] + '</div>'
 						+ '<div class="containertext2" style="' + content_css2 + '">Click to Redeem This Offer</div></div>';
@@ -49,16 +49,13 @@ if (true) {
 		  if (flag == 1) {
 		    	console.log("Match found: " + url);	
 				console.log("Ready: " + self.options.tab_url);
-				
 				document.addEventListener('DOMContentLoaded', function() {
-					
 					var elemDiv = document.createElement('div');
 					elemDiv.id = "shoppingbaba_tab"
 					elemDiv.style.cssText = 'position:fixed; cursor:pointer;'
 											+' background:url("' + self.options.tab_url + '")'
-											+' no-repeat; height:120px; width:auto; padding-bottom:2px;'
+											+' no-repeat; height:160px; width:278px; padding-bottom:2px;'
 											+' margin-top:5px; top:7%; right:-250px; z-index: 99999999;';
-					
 					console.log("Tab: " + elemDiv.style.cssText.margin-top + "," + self.options.tab_url);
 					document.body.appendChild(elemDiv);	
 					$("body").append(panel);
@@ -66,13 +63,13 @@ if (true) {
 								$("#shoppingbaba_tab").on("mouseover", function(){
 									//console.log("Mouseover");
 									$( '#shoppingbaba_main' ).animate({right: "0px"}, 500);
-									$('#shoppingbaba_tab').animate({right:"+=252px"}, 500);
+									$('#shoppingbaba_tab').animate({right:"0%"}, 500);
 								});
 								//Mouse out, popup Animation
 								$("#shoppingbaba_tab").on("mouseout", function(){
 									//console.log("MouseOut");
-									$( '#shoppingbaba_main' ).animate({right: "-250px"}, 500);
-									$('#shoppingbaba_tab').animate({right:"-=252px"}, 500);
+									$( '#shoppingbaba_main' ).animate({right: "-15%"}, 500);
+									$('#shoppingbaba_tab').animate({right:"0%"}, 500);
 								});
 								//Click to go to store
 								$("#shoppingbaba_tab").on("click", function() {
