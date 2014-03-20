@@ -2,8 +2,8 @@ var split = ['Myntra,myntra,Flat Rs.200 Cashback', 'Jabong,jabong,Flat 7% Cashba
 
 var panel;           //The popup on mouseover
 var content_css = "font:90% arial,sans-serif; padding-top: 5%;padding-bottom: 2%; text-align:center;vertical-align: center;background-color: #ffffff; cursor: pointer;color: #000099;"
-var content_css2 = "font:13px arial,sans-serif; padding-top: 1%;text-align: center;vertical-align: center;background-color: #ffffff; cursor: pointer;color: #000099;";
-var header_css = "border-bottom: 5px solid #e1ddd8; height:25%; background-color: #223355;";
+var content_css2 = "font:70% arial,sans-serif; padding-top: 1%;text-align: center;vertical-align: center;background-color: #ffffff; cursor: pointer;color: #000000;";
+var header_css = "border-bottom: 5px solid #e1ddd8; height:15%; background-color: #223355;";
 var main_css = "position:fixed; top:7%; background-color: #ffffff; border:2px solid #555555;  z-index: 9999999; width:15%; height:auto; right:-15%";
 
 
@@ -38,7 +38,7 @@ if (true) {
 		      message = merchant_data[1] + "," + merchant_data[2];  //shopping baba store + "," + discount
 		      panel = '<div id="shoppingbaba_main" style="' + main_css +
 						'"><header style="'+ header_css + '">'
-						+'<img src = "' + self.options.image_url + '" style="position:relative; height:auto; width:100%; margin-top:5zz%; margin-bottom:5%" />'
+						+'<img src = "' + self.options.image_url + '" style="position:relative; height:auto; width:100%; margin-top:3%; margin-bottom:3%" />'
 						+'</header><div id="content" style="' + content_css
 						+ '">' + merchant_data[2] + '</div>'
 						+ '<div class="containertext2" style="' + content_css2 + '">Click to Redeem This Offer</div></div>';
@@ -54,10 +54,10 @@ if (true) {
 					elemDiv.id = "shoppingbaba_tab"
 					elemDiv.style.cssText = 'position:fixed; cursor:pointer;'
 											+' background:url("' + self.options.tab_url + '")'
-											+' no-repeat;background-size:auto 100%; height:50px; width:16.5%; padding-bottom:2px;'
+											+' no-repeat;background-size:auto 100%; height:10px; width:16.5%; padding-bottom:2px;'
 											+' margin-top:2px; top:7%; right:-15%; z-index: 99999999;';
 
-								
+						
 					$(document).ready(function(){
 						$("#shoppingbaba_tab").css("height", $("#shoppingbaba_main").height());});
 
@@ -89,7 +89,7 @@ if (true) {
 									window.open("http://www.shoppingbaba.in/stores/" + merchant_data[1], "_blank");
 								});
 					self.port.emit("changed");
-
+					$("#shoppingbaba_tab").css("height", $("#shoppingbaba_main").height());
 				}, false);
 					
 				//document.body.innerHTML += "<div id='shopping-baba' style='position:fixed;  background: url(\"http://1.bp.blogspot.com/--tscpVzcBjo/TdUarKtcAlI/AAAAAAAAA3I/qVkypiYO9rc/s150/w2b_facebookbadge.png\") no-repeat; height:270px; width:245px; padding-bottom:2px; padding-top:2px; top:15%; right:-200px; z-index: 999999;'></div>" ;
