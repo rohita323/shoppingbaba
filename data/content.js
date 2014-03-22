@@ -3,8 +3,8 @@ var split = ['Myntra,myntra,Flat Rs.200 Cashback', 'Jabong,jabong,Flat 7% Cashba
 var panel;           //The popup on mouseover
 var content_css = "font:90% arial,sans-serif; padding-top: 5%;padding-bottom: 2%; text-align:center;vertical-align: center;background-color: #ffffff; cursor: pointer;color: #000099;"
 var content_css2 = "font:70% arial,sans-serif; padding-top: 1%;text-align: center;vertical-align: center;background-color: #ffffff; cursor: pointer;color: #000000;";
-var header_css = "border-bottom: 5px solid #e1ddd8; height:15%; background-color: #223355;";
-var main_css = "position:fixed; top:7%; background-color: #ffffff; border:2px solid #555555;  z-index: 9999999; width:15%; height:auto; right:-15%";
+var header_css = "border-bottom: 5px solid #e1ddd8; height:25%; background-color: #223355;";
+var main_css = "position:fixed; top:7%; background-color: #ffffff; border:2px solid #555555;  z-index: 9999999; width:250px; height:150px; left:-250px";
 
 
 if (true) {
@@ -38,7 +38,7 @@ if (true) {
 		      message = merchant_data[1] + "," + merchant_data[2];  //shopping baba store + "," + discount
 		      panel = '<div id="shoppingbaba_main" style="' + main_css +
 						'"><header style="'+ header_css + '">'
-						+'<img src = "' + self.options.image_url + '" style="position:relative; height:auto; width:100%; margin-top:3%; margin-bottom:3%" />'
+						+'<img src = "' + self.options.image_url + '" style="position:center; height:100%; width:auto; margin-top:1%; margin-bottom:15%" />'
 						+'</header><div id="content" style="' + content_css
 						+ '">' + merchant_data[2] + '</div>'
 						+ '<div class="containertext2" style="' + content_css2 + '">Click to Redeem This Offer</div></div>';
@@ -54,8 +54,8 @@ if (true) {
 					elemDiv.id = "shoppingbaba_tab"
 					elemDiv.style.cssText = 'position:fixed; cursor:pointer;'
 											+' background:url("' + self.options.tab_url + '")'
-											+' no-repeat;background-size:auto 100%; height:10px; width:16.5%; padding-bottom:2px;'
-											+' margin-top:2px; top:7%; right:-15%; z-index: 99999999;';
+											+' no-repeat;background-size:auto 100%; background-position:right; height:150px; width:275px; padding-bottom:2px;'
+											+' margin-top:1px; top:7%; left:-250px; z-index: 99999999;';
 
 						
 					$(document).ready(function(){
@@ -74,15 +74,15 @@ if (true) {
 					//Mouse over, popup Animation
 								$("#shoppingbaba_tab").on("mouseover", function(){
 									//console.log("Mouseover");
-									$( '#shoppingbaba_main' ).animate({right: "0px"}, 500);
-									$('#shoppingbaba_tab').animate({right:"+=15%"}, 500);
+									$( '#shoppingbaba_main' ).animate({left: "0px"}, 500);
+									$('#shoppingbaba_tab').animate({left:"+=250px"}, 500);
 								});
 
 								//Mouse out, popup Animation
 								$("#shoppingbaba_tab").on("mouseout", function(){
 									//console.log("MouseOut");
-									$( '#shoppingbaba_main' ).animate({right: "-15%"}, 500);
-									$('#shoppingbaba_tab').animate({right:"-15%"}, 500);
+									$( '#shoppingbaba_main' ).animate({left: "-250px"}, 500);
+									$('#shoppingbaba_tab').animate({left:"-250px"}, 500);
 								});
 								//Click to go to store
 								$("#shoppingbaba_tab").on("click", function() {
@@ -92,7 +92,7 @@ if (true) {
 					$("#shoppingbaba_tab").css("height", $("#shoppingbaba_main").height());
 				}, false);
 					
-				//document.body.innerHTML += "<div id='shopping-baba' style='position:fixed;  background: url(\"http://1.bp.blogspot.com/--tscpVzcBjo/TdUarKtcAlI/AAAAAAAAA3I/qVkypiYO9rc/s150/w2b_facebookbadge.png\") no-repeat; height:270px; width:245px; padding-bottom:2px; padding-top:2px; top:15%; right:-200px; z-index: 999999;'></div>" ;
+				//document.body.innerHTML += "<div id='shopping-baba' style='position:fixed;  background: url(\"http://1.bp.blogspot.com/--tscpVzcBjo/TdUarKtcAlI/AAAAAAAAA3I/qVkypiYO9rc/s150/w2b_facebookbadge.png\") no-repeat; height:270px; width:245px; padding-bottom:2px; padding-top:2px; top:15%; left:-200px; z-index: 999999;'></div>" ;
 				//window.alert("BINGO");
 		}
 	}
